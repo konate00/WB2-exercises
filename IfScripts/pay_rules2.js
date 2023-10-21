@@ -1,13 +1,37 @@
+        // From Matt repo...
 "use strict";
+// what are our given starting values?
+var payRate = 17.30;
+var hoursWorked = 45;
 
-var payRate = 12.5;
-var hoursWorked = 20;
-
-if (hoursWorked <= 40) {
+if (hoursWorked <= 40){
+    //no overtime.
     grossPay = payRate * hoursWorked;
 }
-else {
-    
-}
+else{
+    //overtime logic goes here.
+    var basePay = 40 * payRate;
+    var overtimeHours = hoursWorked - 40;
+    var overtimeRate = 1.5 * payRate;
 
-var grossPay;
+    var overtimePay = overtimeHours * overtimeRate;
+    grossPay = basePay + overtimePay;
+}
+console.log(grossPay);
+//console.log(grossPay);
+
+
+
+// "use strict";
+
+// var payRate = 12.5;
+// var hoursWorked = 20;
+
+// if (hoursWorked <= 40) {
+//     grossPay = payRate * hoursWorked;
+// }
+// else {
+    
+// }
+
+// var grossPay;

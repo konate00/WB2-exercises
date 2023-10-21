@@ -2,9 +2,11 @@
 
 let taxRate;
 let income = 1000;
+let filingStatus = "joint";
 
 if (income < 12000) 
 {
+    
     taxRate = 0.05;
 }
 else if (income >= 12000)

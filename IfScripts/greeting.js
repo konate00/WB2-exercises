@@ -1,7 +1,7 @@
 "use strict";
 
 let greeting;
-let time = 10;
+let time = 16;
 
 if (time <= 10){
     greeting = "Good morning" 
