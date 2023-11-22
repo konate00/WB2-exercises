@@ -1,7 +1,7 @@
 "use strict";
 // declare variable
 
-var asset = 200;
+var asset = 2000;
 var debt = 400;
 
 var net = asset - debt;
